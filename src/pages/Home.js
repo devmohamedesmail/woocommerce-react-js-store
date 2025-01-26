@@ -7,6 +7,7 @@ import TopHeader from '../components/topHeader/TopHeader'
 import MiddleHeader from '../components/MiddleHeader/MiddleHeader'
 import BottomHeader from '../components/BottomHeader/BottomHeader'
 import Banner from '../components/banner/Banner'
+import Slideshow from '../components/slider/Slideshow'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <TopHeader />
       <MiddleHeader />
       <BottomHeader />
+    
       <Categories />
       <Banner />
       <Products />

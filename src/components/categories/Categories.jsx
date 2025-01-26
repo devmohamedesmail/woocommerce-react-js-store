@@ -20,7 +20,7 @@ export default function Categories() {
 
                 </div>
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3 items-center">
+            <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-3 items-center">
                 {categories && categories.length > 0 ? (<>{categories.map((cat) => (
                     <CategoryItem id={cat.id} image={cat.image.src} name={cat.name} count={cat.count} key={cat.id} />
                 ))}</>) : (<CategoriesSkeleton />)}

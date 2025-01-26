@@ -35,7 +35,11 @@ export default function ProductInfo({ ProductDetails }) {
             {ProductDetails ? (
                 <div className='product-info p-3'>
                     <h2 className='font-bold my-3'>{ProductDetails.name}</h2>
-                    <p className='my-1'>{ProductDetails.short_description}</p>
+                    
+                    <div
+      className="product-details"
+      dangerouslySetInnerHTML={{ __html: ProductDetails.short_description }}
+    ></div>
 
                     {/* price and sale section */}
 
